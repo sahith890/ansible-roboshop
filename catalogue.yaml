@@ -4,4 +4,4 @@
   tasks:
   - name: setup NPM source
     ansible.builtin.script: 
-      msg: "curl -sL https://rpm.nodesource.com/setup_lts.x | bash"
+      msg: "{{curl -sL https://rpm.nodesource.com/setup_lts.x | bash}}"
